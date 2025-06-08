@@ -1,0 +1,5 @@
+.env
+jaxa-amsr2-nonmelting.csv
+jaxa-*.png
+ascending/VISHOP*.png
+descending/VISHOP*.png

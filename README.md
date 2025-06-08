@@ -1,1 +1,2 @@
-# jaxa-surface-melt
+This repository runs an automated python script daily during summer (June-September) to calculate and plot the number of non-melting sea ice pixels in JAXA 
+sea ice concentration images.  This gives a metric to quantify how much surface melting is taking place on the sea ice compared to previous years.
