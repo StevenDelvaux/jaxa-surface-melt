@@ -415,7 +415,7 @@ if(auto):
 	print('inside aavg', aavg)
 	csvFilename = "jaxa-amsr2-nonmelting.csv"
 	if len(aavg) > 0:
-		#dropbox_client.downloadFromDropbox([csvFilename])
+		dropbox_client.downloadFromDropbox([csvFilename])
 		time.sleep(5)
 		appendToCsvFile(csvFilename, aavg)
 		time.sleep(10)
