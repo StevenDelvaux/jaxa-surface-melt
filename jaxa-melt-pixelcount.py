@@ -33,7 +33,7 @@ export = True
 
 prefix = "./"
 
-year = 2025
+year = 2026
 startyear = year
 endyear = year
 startmonth = 6
@@ -208,20 +208,21 @@ def plotGraph(inputFileName, outputFileName, suptitle, title, ymin, ymax, ylabel
 	dates = np.arange(1,days+1)	
 	with open(inputFileName, 'r') as f:
 		lines = f.readlines()
-	plotLine(ax, lines, dates, -14, '2012', (0.0,0.13,0.38), days)
-	plotLine(ax, lines, dates, -13, '2013', (0,0.44,0.75), days)
-	plotLine(ax, lines, dates, -12, '2014', (0.0,0.69,0.94), days)
-	plotLine(ax, lines, dates, -11, '2015', (0,0.69,0.31), days)
-	plotLine(ax, lines, dates, -10, '2016', (0.57,0.82,0.31), days)
-	plotLine(ax, lines, dates, -9, '2017', (1.0,0.75,0), days)
-	plotLine(ax, lines, dates, -8, '2018', (0.9,0.4,0.05), days)
-	plotLine(ax, lines, dates, -7, '2019', (1.0,0.5,0.5), days)
-	plotLine(ax, lines, dates, -6, '2020', (0.58,0.54,0.33), days)
-	plotLine(ax, lines, dates, -5, '2021', (0.4,0,0.2), days)
-	plotLine(ax, lines, dates, -4, '2022', (0.7,0.2,0.3), days)
-	plotLine(ax, lines, dates, -3, '2023', (0.5,0.3,0.1), days)
-	plotLine(ax, lines, dates, -2, '2024', (0.75,0,0), days)
-	plotLine(ax, lines, dates, -1, '2025', (1,0,0), days)
+	plotLine(ax, lines, dates, -15, '2012', (0.0,0.13,0.38), days)
+	plotLine(ax, lines, dates, -14, '2013', (0,0.44,0.75), days)
+	plotLine(ax, lines, dates, -13, '2014', (0.0,0.69,0.94), days)
+	plotLine(ax, lines, dates, -12, '2015', (0,0.69,0.31), days)
+	plotLine(ax, lines, dates, -11, '2016', (0.57,0.82,0.31), days)
+	plotLine(ax, lines, dates, -10, '2017', (1.0,0.75,0), days)
+	plotLine(ax, lines, dates, -9, '2018', (0.9,0.4,0.05), days)
+	plotLine(ax, lines, dates, -8, '2019', (1.0,0.5,0.5), days)
+	plotLine(ax, lines, dates, -7, '2020', (0.58,0.54,0.33), days)
+	plotLine(ax, lines, dates, -6, '2021', (0.4,0,0.2), days)
+	plotLine(ax, lines, dates, -5, '2022', (0.7,0.2,0.3), days)
+	plotLine(ax, lines, dates, -4, '2023', (0.5,0.3,0.1), days)
+	plotLine(ax, lines, dates, -3, '2024', (0.3,0.3,0.3), days)
+	plotLine(ax, lines, dates, -2, '2025', (0.75,0,0), days)
+	plotLine(ax, lines, dates, -1, '2026', (1,0,0), days)
 		
 	ax.set_ylabel(ylabel)
 	fig.suptitle(suptitle)
@@ -415,7 +416,7 @@ if(auto):
 	print('inside aavg', aavg)
 	csvFilename = "jaxa-amsr2-nonmelting.csv"
 	if len(aavg) > 0:
-		#dropbox_client.downloadFromDropbox([csvFilename])
+		dropbox_client.downloadFromDropbox([csvFilename])
 		time.sleep(5)
 		appendToCsvFile(csvFilename, aavg)
 		time.sleep(10)
