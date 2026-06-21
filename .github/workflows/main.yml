@@ -2,8 +2,9 @@ name: Run Python Script Daily
 
 on:
   schedule:
-    # Run at 3:55 a.m. UTC every day
-    - cron: '55 3 * * *'
+    # Run at 3:55 a.m. UTC every day. Updated because of long Github delays
+    - cron: '55 0 * * 1-5' 
+    - cron: '55 1 * * 0,6' 
 permissions:
   contents: write
 
